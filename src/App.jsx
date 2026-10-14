@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header.jsx';
+import Showcase from './components/Showcase.jsx';
 import Counter from './components/Counter.jsx';
 import TodoList from './components/TodoList.jsx';
 import Footer from './components/Footer.jsx';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className={`app ${theme}`}>
       <Header title="My React App" theme={theme} onToggleTheme={toggleTheme} />
+      <Showcase />
       <main>
         <Counter initial={0} step={1} />
         <TodoList />
